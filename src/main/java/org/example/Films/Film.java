@@ -53,13 +53,5 @@ public class Film {
         this.genre = genre;
     }
 
-    @Override
-    public String toString() {
-        return "Film{" +
-                "titre='" + titre + '\'' +
-                ", realisateur='" + realisateur + '\'' +
-                ", datePublication='" + datePublication + '\'' +
-                ", genre='" + genre + '\'' +
-                '}';
-    }
+
 }
