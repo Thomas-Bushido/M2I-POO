@@ -56,9 +56,10 @@ volume maximum*/
 
     public void remplir(int volume){
       for(double i =this.niveauDeRemplissage; i< this.capaciteMax; i+=this.volume) {
-          if(this.niveauDeRemplissage <= this.capaciteMax) {
+          if(this.niveauDeRemplissage < this.capaciteMax) {
 
               this.niveauDeRemplissage += volume;
+
               System.out.println("le volume ajouté est de +"+ volume+ "\n"+ "Niveau de remplissage actuel: "+ this.niveauDeRemplissage);
           } else {
 
@@ -84,7 +85,19 @@ volume maximum*/
 
         }
     }
-/*
+
+    @Override
+    public String
+
+    toString() {
+        return "WaterTank{" +
+                "poidsAVide=" + poidsAVide +
+                ", capaciteMax=" + capaciteMax +
+                ", niveauDeRemplissage=" + niveauDeRemplissage +
+                ", volume=" + volume +
+                '}';
+    }
+    /*
     public void vider(int volume) {
         for(double i =this.niveauDeRemplissage; i> 0; i--) {
             if(this.niveauDeRemplissage >= this.capaciteMax) {
